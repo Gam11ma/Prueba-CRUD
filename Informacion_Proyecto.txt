@@ -1,0 +1,6 @@
+
+-CRUD Basico de Tienda de instrumentos musicales
+
+-Se ejecutó el proyecto en windows, en un HOST local con XAMPP.
+
+-Se utiliza el patron de diseño Modelo Vista Controlador (MVC)

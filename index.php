@@ -1,7 +1,7 @@
 <?php 
 
 //Se establece el namespace para especificar el directorio donde podemos acceder
-	namespace Prueba;
+	namespace CRUD;
 	// Se importan las clases
 	use MvcController;
 	use Conexion;
@@ -10,7 +10,7 @@
 	use ArticulosController;
 
 
-	// Modelos a utilizar
+	// Archivos de modelos a utilizar
  	require_once 'models/conexion.php';
  	require_once 'models/ArticulosModel.php';
 	

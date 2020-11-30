@@ -4,10 +4,11 @@
  */
 class ArticulosController
 {
-	static public function agregarArticulo($datos)
+	//Validaciones correspondientes para poder acceder al metodo del modelo
+	static public function agregarArticulo($datos) 
 	{
-		if ($datos['nombre'] != '' && $datos['precio'] > 0 && $datos['descripcion'] != '') {
-			if (ArticulosModel::crearArticulo($datos)) {
+		if ($datos['nombree'] != '' && $datos['precioo'] > 0 && $datos['descripcionn'] != '') {
+			if (ArticulosModel::crearArticulo($datos)) { //Accedemos al modelo
 				return "Se registro correctamente"; 
 			}else{
 				return "No se realizó el registro";
@@ -17,10 +18,11 @@ class ArticulosController
 		}	
 	}
 
+	//Validaciones correspondientes para poder acceder al metodo del modelo
 	static public function editarArticulo($datos)
 	{
 		if ($datos['nombre'] != '' && $datos['precio'] > 0 && $datos['descripcion'] != '') {
-			if (ArticulosModel::editarArticulo($datos)) {
+			if (ArticulosModel::editarArticulo($datos)) {//Accedemos al modelo
 				return "Se edito correctamente"; 
 			}else{
 				return "No se editó";
@@ -32,8 +34,8 @@ class ArticulosController
 	{
 		if ($id >= 0) {
 			 
-			if (ArticulosModel::eliminarArticulos($id)) {
-				return "Usuario eliminado"; 
+			if (ArticulosModel::eliminarArticulos($id)) { //Accedemos al modelo
+				return "Instrumento eliminado"; 
 			}else{
 				return "No se pudo eliminar";
 			}

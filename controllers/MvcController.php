@@ -12,7 +12,6 @@
  	public function getRuta(){ 
  		$ruta = $_GET['ruta'];
  		switch ($ruta) {
- 
  			case 'articulos':
  				include 'views/modulos/articulos.php';
  				break;

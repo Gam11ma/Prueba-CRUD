@@ -1,15 +1,16 @@
 <?php 
 	/*
-	  Clase donde se crean todos los metodos Crear, Leer, Actalizar, Eliminar
+	  Clase donde se crean todos los metodos Crear, Leer, Actualizar, Eliminar
 	  Create, Read, Update,Delete (CRUD)
 	 */
 	class ArticulosModel 
 	{
+		//Metodos para acceder a base de datos y realizar las sentencias solicitadas
 		static public function crearArticulo($datos)
 		{
-			$conex = Conexion::conectar();
+			$conex = Conexion::conectar(); //Accedemos a conexion a base de datos
 			$stmt = $conex->prepare("INSERT into articulos (nombre, precio, descripcion, status) values (:nom, :pre, :des, :sta)");
-			if ($stmt->execute([':nom'=>$datos['nombre'], ':pre'=>$datos['precio'], ':des'=>$datos['descripcion'],':sta'=>1])) {
+			if ($stmt->execute([':nom'=>$datos['nombree'], ':pre'=>$datos['precioo'], ':des'=>$datos['descripcionn'],':sta'=>1])) {
 				return true;
 			}else{
 				return false;

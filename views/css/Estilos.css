@@ -1,0 +1,53 @@
+html {
+  background-color: #89C5D3 ;
+}
+
+body {
+  width: 700px;
+  margin: 50px auto;
+  background-color: #FEF9E7;
+  padding: 20px 50px 50px 20px;
+  border: 2px solid black;
+}
+
+h1 {
+  margin: 0;
+  padding: 20px 0;
+  color: #34495E ;
+}
+
+h3 {
+  margin: 0;
+  padding: 5px 0;
+  color: #023C49;
+}
+
+button {
+    text-decoration: none;
+    padding: 5px;
+    font-weight: 500;
+    font-size: 15px;
+    color: #1C2833;
+    background-color: #AED6F1;
+    border-radius: 6px;
+    border: .5 solid #0016b0;
+  }
+
+  table {
+    table-layout: fixed;
+    width: 100%;
+    border: 1px solid blue;
+}
+
+table td {
+  text-align: center;
+}
+
+a {
+  color:black;
+  background-color: #ADE1ED;
+  padding: 7px;
+  margin: 40px;
+  border-radius: 6px;
+  border: 1px solid blue;
+}

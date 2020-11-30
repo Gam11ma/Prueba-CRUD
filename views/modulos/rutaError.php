@@ -1,1 +1,1 @@
-<h2>Esta ruta no se encuentra!</h2>
+<h3>Da click en ver instrumentos musicales!</h3>
